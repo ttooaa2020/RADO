@@ -1,0 +1,158 @@
+@charset "utf-8";
+
+/* about */
+.about-text {
+  flex: 1 1 max(40%, 300px);
+  /* border: 1px solid #000; */
+}
+
+.about-con {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20rem;
+}
+
+.about-con li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5%;
+}
+
+.about-con li:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.about-con dl dt {
+  padding-top: 3rem;
+  font-size: 4rem;
+  font-weight: 700;
+
+  padding-top: 4.4313%;
+  font-size: clamp(2.2rem, 2.0833vw, 4rem);
+}
+
+.about-con dl dd {
+  padding-top: 2rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  color: var(--Darck-60);
+
+  padding-top: 2.9542%;
+  font-size: clamp(1.5rem, 1.25vw, 2.4rem);
+}
+
+.about-con figure {
+  height: 47rem;
+  border-radius: 2.4rem;
+  overflow: hidden;
+  flex: 1 1 max(40%, 300px);
+}
+
+.about-con figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* about end */
+
+.event-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 11.1rem 0;
+}
+
+.event-list li {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 43.2rem;
+  height: 45rem;
+
+  width: 28.4211%;
+}
+
+.event-list li figure {
+  width: 100%;
+  height: 31.8rem;
+  border-radius: 2.4rem;
+  overflow: hidden;
+
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.event-list li img {
+  width: 100%;
+  height: 100%;
+}
+
+.event-list li {
+  text-align: center;
+}
+
+.event-text {
+  padding-top: 2.8rem;
+}
+
+.event-text dt {
+  font-size: clamp(1.5rem, 1.25vw, 2.4rem);
+  font-weight: 800;
+
+  /* font-size: clamp(1.2rem, 1.25vw, 2.4rem); */
+}
+
+.event-text dd {
+  padding-top: 2rem;
+  font-size: clamp(1.3rem, 1.042vw, 2rem);
+  font-weight: 600;
+  color: var(--Darck-60);
+
+  /* font-size: clamp(0.9rem, 1.0416vw, 2rem); */
+}
+
+/* 반응형0000000000000000000000000000000000000000000000000000000000 */
+@media (max-width: 1500px) {
+  .event-list > li {
+    flex: 1 1 30%;
+  }
+
+  .event-list {
+    gap: 13rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .about-con figure {
+    height: 28.6rem;
+  }
+}
+
+@media (max-width: 980px) {
+  .about-text {
+    padding-bottom: 2.2rem;
+  }
+}
+
+@media (max-width: 940px) {
+  .event-list {
+    padding-top: 4rem;
+  }
+  .event-list > li figure {
+    height: 28.2rem;
+  }
+
+  .event-list > li {
+    flex: 1 1 50%;
+  }
+
+  .event-list {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .about-con li :last-child {
+    margin-bottom: 2.5rem;
+  }
+}

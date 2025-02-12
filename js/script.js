@@ -39,6 +39,23 @@ $(function () {
   });
   // 헤더에 마우스 오버시 언어 메뉴 표시----------------------------------------------------------------
 
+  // 제품 스와이퍼
+  const courseSwiper = new Swiper(".course-list", {
+    speed: 1000,
+    loop: true,
+    slidesPerView: 5,
+    spaceBetween: 83,
+
+    // autoplay: {
+    //   delay: 2000,
+    // },
+
+    navigation: {
+      nextEl: ".course-button-next",
+      prevEl: ".course-button-prev",
+    },
+  });
+
   // 고정 스크롤
   gsap.registerPlugin(ScrollTrigger);
 
@@ -90,6 +107,5 @@ $(function () {
       $answer.stop().slideUp(duration);
     }
   });
-
   // question end------------------------------------------------------------
 });
