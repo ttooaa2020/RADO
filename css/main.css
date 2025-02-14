@@ -211,12 +211,12 @@
   font-size: 2rem;
   font-size: clamp(1.4rem, 1.0416vw, 2rem);
 
-  color: #fff;
+  color: var(--Light-100);
 }
 
 .more-btn:hover {
   background: var(--main-color);
-  color: #fff;
+  color: var(--Light-100);
 }
 
 /* e.commpany */

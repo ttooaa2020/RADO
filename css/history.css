@@ -1,6 +1,15 @@
 @charset "utf-8";
 
 /* accident */
+
+.accident-title h3:nth-child(2) {
+  font-style: italic;
+}
+
+.accident-title h3:nth-child(3) {
+  font-weight: 700;
+}
+
 .accident {
   margin-bottom: 20rem;
 }
@@ -60,6 +69,7 @@
   border-radius: 3rem;
   overflow: hidden;
   position: relative;
+  border: 1px solid rgba(0, 0, 0, 0.3);
 
   width: 36.3326%;
   height: 100%;
@@ -71,13 +81,13 @@
 
 .accident-list li .list-text {
   width: 53.5rem;
-  padding: 6rem 4rem 15rem;
+  /* padding: 6rem 4rem 15rem; */
   border-radius: 3rem;
   background: var(--Darck-100);
   color: var(--Light-100);
 
   width: 60.9339%;
-  padding: 6.8337% 4.5558% 17.0842%;
+  padding: 6.8337% 4.5558% 10.0842%;
 }
 
 .list-text dt {
@@ -91,6 +101,7 @@
   font-weight: 400;
   font-size: 2.2rem;
   padding-top: 2rem;
+  color: var(--btn);
 
   padding-top: 3.7383%;
   font-size: clamp(1.5rem, 1.14583vw, 2.2rem);
